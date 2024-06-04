@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myAngularJSApp">
   <head>
     <meta charset="UTF-8">
     <title>The Angular JS App</title>
@@ -12,8 +12,8 @@
     <script src="src/app/controllers/contact-controller.js"></script>
     <script src="src/app/directives/random-user-directive.js"></script>
   </head>
-  <body ng-app="myAngularJSApp">
-    <div ng-include="'src/app/views/header.html'"></div>
-    <main ng-view></main>
+  <body>
+    <ng-include src="'src/app/views/header.html'"></ng-include>
+    <ng-view></ng-view>
   </body>
 </html>

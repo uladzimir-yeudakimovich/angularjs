@@ -1,7 +1,7 @@
 myAngularJSApp.controller('AppController', ['$scope', '$http', function($scope, $http){
     $scope.removeUser = function(user){
         const removeUser = $scope.users.indexOf(user);
-        $scope.users.splice(removeUser, $scope.users.length);
+        $scope.users.splice(removeUser, 1);
     };
     
     $scope.addUser = function(){

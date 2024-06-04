@@ -14,4 +14,4 @@ Though the opportunity did not materialize as expected, I leave this project as 
 
 ## In a browser
 # <a href="https://uladzimir-yeudakimovich.github.io/angularjs/">Open in browser</a>
-# <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fuladzimir-yeudakimovich.github.io%2angularjs%2F">Check validity</a>
+# <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fuladzimir-yeudakimovich.github.io%2Fangularjs%2F">Check validity</a>

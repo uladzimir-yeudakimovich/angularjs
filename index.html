@@ -1,17 +1,19 @@
-<html lang="en" ng-app="myAngularJSApp">
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>The Angular JS App</title>
-    <link href="src/assets/css/styles.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="libs/angular.min.js"></script>
-    <script type="text/javascript" src="libs/angular-route.min.js"></script>
-    <script type="text/javascript" src="libs/angular-animate.min.js"></script>
-    <script type="text/javascript" src="src/app/app.js"></script>
-    <script type="text/javascript" src="src/app/controllers/app-controller.js"></script>
-    <script type="text/javascript" src="src/app/controllers/contact-controller.js"></script>
-    <script type="text/javascript" src="src/app/directives/random-user-directive.js"></script>
+    <link href="src/assets/css/styles.css" rel="stylesheet">
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <script src="libs/angular-animate.min.js"></script>
+    <script src="src/app/app.js"></script>
+    <script src="src/app/controllers/app-controller.js"></script>
+    <script src="src/app/controllers/contact-controller.js"></script>
+    <script src="src/app/directives/random-user-directive.js"></script>
   </head>
-  <body>
-    <header ng-include="'src/app/views/header.html'"></header>
+  <body ng-app="myAngularJSApp">
+    <div ng-include="'src/app/views/header.html'"></div>
     <main ng-view></main>
   </body>
 </html>

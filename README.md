@@ -12,3 +12,6 @@ Regrettably, on Monday the 3rd of June, the offer to work with AngularJS was dec
 ## Conclusion
 Though the opportunity did not materialize as expected, I leave this project as a tribute to my commitment to growth and development in my field. Every challenge, whether successful or not, contributes to my journey as a developer and enriches my professional repertoire.
 
+## In a browser
+# <a href="https://uladzimir-yeudakimovich.github.io/angularjs/">Open in browser</a>
+# <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fuladzimir-yeudakimovich.github.io%2angularjs%2F">Check validity</a>

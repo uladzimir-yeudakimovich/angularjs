@@ -1,0 +1,25 @@
+[{
+	"name": "John",
+	"belt": "red",
+	"rate": "50",
+	"available": true,
+	"thumb": "src/assets/images/squirrel.jpg"
+}, {
+	"name": "Ron",
+	"belt": "green",
+	"rate": "80",
+	"available": true,
+	"thumb": "src/assets/images/fox.jpeg"
+}, {
+	"name": "Bob",
+	"belt": "blue",
+	"rate": "20",
+	"available": true,
+	"thumb": "src/assets/images/lemur.jpeg"
+}, {
+	"name": "David",
+	"belt": "yellow",
+	"rate": "120",
+	"available": true,
+	"thumb": "src/assets/images/tiger.jpeg"
+}]

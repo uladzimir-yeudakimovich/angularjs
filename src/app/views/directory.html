@@ -1,0 +1,29 @@
+<div class="content">
+    <button type="button" ng-click="order = 'name'">Order by Name</button>
+    <button type="button" ng-click="order = 'belt'">Order by Belt</button>
+    <input type="text" ng-model="search" placeholder="Search for users" />
+    <ul id="user-list">
+        <li ng-repeat="user in users | orderBy: order | filter: search" ng-show="user.available">
+            <img ng-src="{{user.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px;" ng-show="user.thumb">
+            <h3>{{user.name}} - {{user.rate | currency: '$'}}</h3>
+            <div class="remove" ng-click="removeUser(user)">X</div>
+            <span class="belt" style="background: {{user.belt}}">{{user.belt}} belt</span>
+        </li>
+    </ul>
+    <form name="userForm" ng-submit="addUser()" novalidate>
+        <input type="text" ng-model="newUser.name" placeholder="name" name="name" ng-required="true">
+        <div ng-show="userForm.name.$touched && userForm.name.$invalid">
+            <small class="validation-message">Enter a valid name</small>
+        </div>
+        <input type="text" ng-model="newUser.belt" placeholder="belt" name="belt" ng-required="true">
+        <div ng-show="userForm.belt.$touched && userForm.belt.$invalid">
+            <small class="validation-message">Enter a valid name</small>
+        </div>
+        <input type="number" min="1" ng-model="newUser.rate" placeholder="rate" name="rate" ng-required="true">
+        <div ng-show="userForm.rate.$touched && userForm.rate.$invalid">
+            <small class="validation-message">Enter a valid name</small>
+        </div>
+        <input type="submit" value="Add new user" ng-disabled="userForm.$invalid">
+    </form>
+    <a href="" ng-click="removeAll()">Remove all users</a>
+</div>

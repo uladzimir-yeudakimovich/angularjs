@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-animate": "^1.8.3",
+    "angular-route": "^1.8.3"
+  }
+}

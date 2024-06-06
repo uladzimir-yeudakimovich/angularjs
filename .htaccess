@@ -1,0 +1,11 @@
+# Use mod_rewrite to handle AngularJS routing
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /angularjs/
+
+  # Redirect all requests to index.html
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /angularjs/index.html [L]
+</IfModule>

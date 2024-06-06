@@ -1,8 +1,0 @@
-RewriteEngine On
-    # If an agsisting accet or directory is requared go to it as it is
-    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URL} -f [OR]
-    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URL} -d
-    RewriteRule ^ - [L]
-
-    # If the requeted resource does not exist, use index.html
-    RewriteRule ^ /index.html

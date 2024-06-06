@@ -1,6 +1,9 @@
 const myAngularJSApp = angular.module('myAngularJSApp', ['ngRoute', 'ngAnimate']);
 
-myAngularJSApp.config(['$routeProvider', function($routeProvider){
+myAngularJSApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+
+    $locationProvider.html5Mode(true);
+    
     $routeProvider
         .when('/home', {
             templateUrl: 'src/app/views/home.html',
